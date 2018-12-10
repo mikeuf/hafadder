@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+@font-face {
+  font-family: 'Libre Franklin';
+  src: url('../assets/fonts/libre-franklin/libreranklin-regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Libre Franklin';
+  src: url('../assets/fonts/libre-franklin/libreranklin-semibold.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Libre Franklin';
+  src: url('../assets/fonts/libre-franklin/libreranklin-bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  background-color: #ea4335;
+}
+
+header {
+  height: 4.5rem;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #ffffff;
+  text-align: right;
+}
+
+footer {
+  display: none;
+}
+
+main {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 7rem;
+  background-image: url('../images/background-desktop.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+
+article {
+  color: #ffffff;
+  font-size: 1.25rem;
+}
+
+aside {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 1.25rem;
+}
+
+#logo {
+  max-width: 130px; 
+  width: 100%;
+  display: inline;
+  float: left;
+}
+
+#btn-hamburger {
+  display: inline;
+  float: left;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ea4335;
+  padding-top: 1rem;
+  padding-right: 1.5rem;
+}
+
+
+
+h1 {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+
+#tagline {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+figure {
+  display: block;
+}
+
+figure img {
+  width: 100%;
+  max-width: 250px;
+}
+
+figcaption {
+  color: #ffffff;
+  text-align: center;
+}
+
+.figure-left {
+  float: left;
+  padding-right: 2rem;
+  padding-bottom: 2rem; 
+
+}
+.figure-right {
+  float: right;
+  padding-left: 2rem;
+  padding-bottom: 2rem; 
+
+}
+
+p {
+  padding-bottom: 1rem;
+}
+
+#accent-gold {
+  color: #fbbc05;
+}
+
+.btn {
+  display: block;
+  margin: auto;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ea4335;
+  background-color: #fbbc05;
+  padding: 8px 20px 8px 20px;
+  text-decoration: none;
+}
+
+#header-mobile-nav {
+  display: none;
+  list-style-type: none;
+  text-align: left;
+}
+
+.header-container {
+  background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+#header-desktop-nav {
+  display: none;
+}
+
+#header-desktop-nav ul {
+  list-style-type: none;
+  font-size: 1.5rem;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 700;
+  clear: both;
+  display: inline;
+  float: left;
+}
+
+#header-desktop-nav ul li {
+  text-align: left;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+#header-desktop-nav a, a:link, a:visited, a:focus, a:hover, a:active {
+  color: #ea4335;
+  text-decoration: none;
+}
+
+
+#products h1, h2, p {
+  padding-bottom: 1rem;
+}
+
+#products h2 {
+
+  font-size: 1.5rem;
+}
+
+#products section {
+  padding-bottom: 3rem;
+}
+
+/*** Contact form stuff ***/
+
+textarea, input[type=text], [type=email] {
+  border: 1px solid #555555;
+  line-height: 1.5rem;
+  padding: 0.25em 0 0.25em 0.25em;
+  width: 100%;
+}
+
+#contact p {
+  font-family: 'Libre Franklin', sans-serif;
+  padding-bottom: 0.5em;
+}
+
+#contact-message-label {
+  padding: 0.5em 0 0 0 !important;
+}
+
+#contact-form {
+  font-size: 1.25rem;
+}
+
+
+#contact-form label {
+  display: inline-block;
+  padding: 0.5em 0 0.25em 0;
+}
+
+#mailing-list-checkbox {
+  display: inline-block;
+  position: relative;
+  top: -3px;
+}
+
+#mailing-list-checkbox-label {
+  padding: 1.5em 0 !important;
+}
+
+::placeholder { /* for most browsers */
+  color: #aaaaaa;
+  opacity: 1; /* firefox */
+}
+
+::-ms-input-placeholder { /* edge */
+  color: #aaaaaa;
+}
+:-ms-input-placeholder { /* IE*/
+  color: #aaaaaa;
+}
+
+/*** Fixing recaptcha ***/
+/* Source: https://geekgoddess.com/how-to-resize-the-google-nocaptcha-recaptcha */
+
+#rc-imageselect, .g-recaptcha {
+  transform: scale(0.87);
+  -webkit-transform: scale(0.87);
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+}
+
+
+#products {
+  padding: 3rem;
+  max-width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 0 0 2em 0;
+
+}
+
+.product-entry {
+}
+
+.product-img {
+  display: inline;
+  float: left;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  max-width: 250px;
+  width: 100%;
+}
+
+
+
+
+/***** MEDIA QUERY 700PX+ *****/
+@media (min-width: 700px) {
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  #header-mobile-nav {
+    display: none;
+  }
+
+  #header-desktop-nav {
+    padding-top: 1.5rem;
+    display: block !important;
+    float: right;
+  }
+
+  #header-desktop-nav ul {
+    display: block;
+  }
+
+  #header-desktop-nav ul li {
+    display: inline;
+    padding-right: 2rem;
+  }
+
+  #header-desktop-nav a, a:link, a:visited, a:focus, a:hover, a:active {
+    color: #ea4335;
+    text-decoration: none;
+  }
+
+  #header-desktop-nav ul li a {
+    color: #ea4335;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  #btn-hamburger {
+    display: none;
+  }
+
+}
+
+/***** MEDIA QUERY HEIGHT *****/
+@media (min-height: 830px) {
+
+  footer {
+    display: block;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #ed8c51;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #ffffff;
+  }
+
+  footer p {
+    padding: 1rem;
+  }
+
+
+}
+

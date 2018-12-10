@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Haf Adder - Contact Form</title>
+
+    <meta name="description" content="Contact form for Haf Adder." />
+    <meta name="keywords" content"contact, contact form" />
+
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="assets/scripts/contactFormSubmit.js"></script>
+
+    <!--#include file="header.html" -->  
+    <main>
+    <article id="contact">
+      <h1>Contact</h1>
+      <!-- begin contact form -->
+      <section id="contact-form">
+        <form name="form1" method="post" action="javascript:contactFormSubmit();" autocomplete="on">
+          <label for="form-name">Name:</label><input type="text" name="form-name" id="form-name" placeholder="Your name" size="60" autocomplete="name" autofocus /><br />
+          <label for="form-email">Email:</label><input type="email" name="form-email" id="form-email" placeholder="Email address" size="60" autocomplete="email" /><br />
+          <p id="contact-message-label">Message:</p><textarea name="form-message" id="form-message" placeholder="Your message" class="message" cols="80" rows="10" maxlength="1000"></textarea><br />
+
+          <br />
+          <div class="g-recaptcha" data-sitekey="6LePg0cUAAAAAI8z5HioIt1LcmEgGAYf0_H7xlWW"></div>
+          <br />
+          <input class="btn" type="submit" value="Submit" />
+          <br />
+        </form>
+      </section>
+      <!-- this is where status updates go when the form is submitted -->
+      <section id="form-status"></section>
+        <!-- end contact form -->
+    </article>
+    </main>
+    <!--#include file="footer.html" -->
+    </body>
+</html>
