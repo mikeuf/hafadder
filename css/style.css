@@ -78,6 +78,30 @@ main {
   height: 100vh;
 }
 
+#splash {
+  max-width: 960px;
+  margin: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 7rem;
+  background-image: url('../images/background-desktop.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.standard {
+  max-width: 960px;
+  margin: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 7rem;
+  color: #444444;
+  background-color: #fafafa;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
 
 article {
   color: #ffffff;
