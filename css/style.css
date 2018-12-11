@@ -5,6 +5,7 @@
   font-size: 100%;
 }
 
+/*
 @font-face {
   font-family: 'Libre Franklin';
   src: url('../assets/fonts/libre-franklin/libreranklin-regular.ttf');
@@ -25,14 +26,26 @@
   font-weight: 700;
   font-style: normal;
 }
+*/
 html {
   font-size: 16px;
 }
 
 body {
-  font-family: 'Libre Franklin', sans-serif;
+  /*font-family: 'Libre Franklin', sans-serif; */
+  font-family: 'Noto Sans', sans-serif;
   background-color: #ea4335;
 }
+
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Anton', sans-serif;
+padding-bottom: 1rem;
+}
+
+h1 {
+padding-left: 6%;;
+}
+
 
 header {
   height: 4.5rem;
@@ -82,16 +95,16 @@ aside {
   width: 100%;
   display: inline;
   float: left;
+  padding-left: 6%;
 }
 
 #btn-hamburger {
   display: inline;
-  float: left;
+  float: right;
   font-size: 2.5rem;
   font-weight: 700;
   color: #ea4335;
   padding-top: 1rem;
-  padding-right: 1.5rem;
 }
 
 
@@ -112,10 +125,6 @@ figure {
   display: block;
 }
 
-figure img {
-  width: 100%;
-  max-width: 250px;
-}
 
 figcaption {
   color: #ffffff;
@@ -130,9 +139,13 @@ figcaption {
 }
 .figure-right {
   float: right;
-  padding-left: 2rem;
   padding-bottom: 2rem; 
 
+}
+
+.figure-right img {
+width: 100%;
+max-width: 325px;
 }
 
 p {
@@ -157,7 +170,7 @@ p {
 #header-mobile-nav {
   display: none;
   list-style-type: none;
-  text-align: left;
+  text-align: right;
 }
 
 .header-container {
@@ -174,15 +187,16 @@ p {
 #header-desktop-nav ul {
   list-style-type: none;
   font-size: 1.5rem;
-  font-family: 'Libre Franklin', sans-serif;
+ /*  font-family: 'Libre Franklin', sans-serif; */
   font-weight: 700;
   clear: both;
   display: inline;
-  float: left;
+  float: right;
+
 }
 
 #header-desktop-nav ul li {
-  text-align: left;
+  text-align: right;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
@@ -266,15 +280,34 @@ textarea, input[type=text], [type=email] {
   -webkit-transform-origin: 0 0;
 }
 
-
-#products {
-  padding: 3rem;
-  max-width: 100%;
-  background: rgba(0, 0, 0, 0.2);
+#about {
+  padding: 6%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.1);
   overflow: hidden;
   margin: 0 0 2em 0;
-
+  height: 100%;
 }
+
+#products {
+  padding: 6%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 0 0 2em 0;
+  height: 100%;
+}
+
+
+#contact {
+  padding: 6%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 0 0 2em 0;
+  height: 100%;
+}
+
 
 .product-entry {
 }
@@ -336,7 +369,7 @@ textarea, input[type=text], [type=email] {
 
 }
 
-/***** MEDIA QUERY HEIGHT *****/
+/***** MEDIA QUERIES *****/
 @media (min-height: 830px) {
 
   footer {
@@ -350,7 +383,7 @@ textarea, input[type=text], [type=email] {
 
   footer p {
     display: block;
-    padding-left: 10%;
+    padding-left: 16%;
     padding-right: 10%;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -358,6 +391,38 @@ textarea, input[type=text], [type=email] {
     margin: auto;
   }
 
+  
+
 
 }
 
+
+@media (min-width: 600px) {
+  figure {
+  padding-left: 1rem;
+}
+
+
+}
+
+@media (min-width: 700px) {
+  figure {
+  padding-left: 1.5rem;
+}
+
+.figure-right img {
+max-width: 325px;
+
+}
+}
+
+@media (min-width: 800px) {
+  figure {
+  padding-left: 2rem;
+}
+
+.figure-right img {
+max-width: 350px;
+
+}
+}
