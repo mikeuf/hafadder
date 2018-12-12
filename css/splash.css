@@ -1,0 +1,20 @@
+#header-container {
+background-color: #ffffff;
+}
+
+#header-desktop-nav a, a:link, a:visited, a:focus, a:hover, a:active {
+    color: #ea4335 !important;
+      text-decoration: none;
+    }
+
+
+#btn-hamburger {
+color: #ea4335;
+}
+
+footer {
+  color: #ea4335;
+background-color: #fbbc05;
+}
+
+}

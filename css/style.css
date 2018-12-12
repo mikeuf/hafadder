@@ -66,12 +66,12 @@ header {
   margin: auto;
   padding-left: 10%;
   padding-right: 10%;
-  background-color: #ffffff;
+  background-color: #ea4335;
   text-align: right;
 }
 
 #header-container {
-  background-color: #ffffff;
+  background-color: #ea4335;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -146,11 +146,8 @@ aside {
   float: right;
   font-size: 2.5rem;
   font-weight: 700;
-  color: #ea4335;
-  padding-top: 1rem;
+  color: #ffffff;
 }
-
-
 
 h1 {
   font-size: 2rem;
@@ -249,7 +246,7 @@ p {
 }
 
 #header-desktop-nav a, a:link, a:visited, a:focus, a:hover, a:active {
-  color: #ea4335;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -398,7 +395,7 @@ textarea, input[type=text], [type=email] {
   }
 
   #header-desktop-nav ul li a {
-    color: #ea4335;
+    color: #ffffff;
     text-decoration: none;
     font-size: 1.4rem;
     font-weight: bold;
@@ -415,7 +412,7 @@ textarea, input[type=text], [type=email] {
 
   footer {
     display: block !important;
-    background-color: #ed8c51;
+    background-color: #ea4335;
     position: fixed;
     bottom: 0;
     width: 100%;
