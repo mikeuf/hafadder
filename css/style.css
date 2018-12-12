@@ -33,12 +33,13 @@ html {
 
 body {
   /*font-family: 'Libre Franklin', sans-serif; */
+
   font-family: 'Noto Sans', sans-serif;
   /* background-color: #ea4335; */
 }
 
 h1, h2, h3, h4, h5, h6 {
-font-family: 'Anton', sans-serif;
+font-family: 'Ubuntu', sans-serif;
 padding-bottom: 1rem;
 }
 
@@ -68,6 +69,14 @@ header {
   padding-right: 10%;
   background-color: #ffffff;
   text-align: right;
+}
+
+#header-container {
+  background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  border-bottom: 1px solid #ea4335;
 }
 
 footer {
@@ -216,12 +225,6 @@ p {
   text-align: right;
 }
 
-.header-container {
-  background-color: #ffffff;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-}
 
 #header-desktop-nav {
   display: none;
