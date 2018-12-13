@@ -46,9 +46,20 @@ font-style: normal;
     padding-right: 6%;
   }
 
+  p:before {
+  content: '';
+  width: 10rem;
+  display: block;
+  overflow: hidden;
+  }
+
+
   #splash-container {
     background-color: #ea4335;
     color: #ffffff;
+    background-image: url('../images/background-desktop.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
   }
 
   .standard-container {
@@ -101,9 +112,6 @@ font-style: normal;
     max-width: 960px;
     margin: auto;
     padding-top: 7rem;
-    background-image: url('../images/background-desktop.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
     height: 100vh;
   }
 
@@ -352,9 +360,10 @@ font-style: normal;
   }
 
   .product-img {
-    display: inline;
+    display: block;
     float: right;
-    padding-left: 3rem;
+    padding-left: 6%;
+    padding-right: 6%;
     padding-bottom: 2rem;
     max-width: 200px;
     width: 100%;
